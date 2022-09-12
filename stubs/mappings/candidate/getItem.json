@@ -1,0 +1,18 @@
+{
+  "request": {
+    "urlPath": "/candidate/getItem",
+    "method": "POST",
+    "bodyPatterns": [
+      {
+        "matchesJsonPath": "$.candidateId"
+      }
+    ]
+  },
+  "response": {
+    "bodyFileName": "candidate/getItem.json",
+    "transformers": ["response-template"],
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "request": {
+    "urlPath": "/task/getList",
+    "method": "POST"
+  },
+  "response": {
+    "status": 200,
+    "jsonBody": {
+      "success": true,
+      "pdfLink": [
+        "first",
+        "second"
+      ]
+    },
+    "headers": {
+      "Content-Type": "application/json"
+    }
+  }
+}

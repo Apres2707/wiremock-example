@@ -1,0 +1,12 @@
+{
+  "success": true,
+  "data": {
+    "candidate": {
+      "candidateId": "{{jsonPath request.body '$.candidateId'}}",
+      "name": "some name",
+      "description": "{{randomValue length=10 type='ALPHANUMERIC'}}",
+      "createdAt": "{{now offset='-24 seconds' format='yyyy-MM-dd HH:mm:ss'}}",
+      "expiredAt": "{{now offset='3 days' format='yyyy-MM-dd HH:mm:ss'}}"
+    }
+  }
+}

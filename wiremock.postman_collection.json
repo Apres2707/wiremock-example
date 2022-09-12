@@ -1,0 +1,188 @@
+{
+	"info": {
+		"_postman_id": "5292313e-b082-4c84-8559-4fd645d379cd",
+		"name": "wiremock",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "5666225"
+	},
+	"item": [
+		{
+			"name": "task/getList",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "127.0.0.1:8080/task/getList",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"task",
+						"getList"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "candidate/getItem",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"candidateId\": 67\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "127.0.0.1:8080/candidate/getItem",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"candidate",
+						"getItem"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "__admin",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/__admin",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"__admin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "__admin/requests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/__admin/requests",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"__admin",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "__admin/requests/count",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"method\": \"POST\",\n  \"url\": \"/task/getList\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8080/__admin/requests/count",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"__admin",
+						"requests",
+						"count"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "__admin/requests/unmatched",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/__admin/requests/unmatched",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"__admin",
+						"requests",
+						"unmatched"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE __admin/requests",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8080/__admin/requests",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8080",
+					"path": [
+						"__admin",
+						"requests"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

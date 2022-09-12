@@ -1,0 +1,10 @@
+services:
+  wiremock:
+    container_name: wiremock
+    hostname: wiremock
+    image: wiremock/wiremock:2.33.2
+    ports:
+      - "8080:8080"
+    command: "--local-response-templating --port 8080"
+    volumes:
+      - ./stubs:/home/wiremock
